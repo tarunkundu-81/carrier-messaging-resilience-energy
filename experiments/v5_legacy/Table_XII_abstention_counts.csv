@@ -1,0 +1,17 @@
+energy,policy,n_available,n_base,abstentions
+L,Knee,2205,2205,0
+L,MC-oracle,2188,2205,17
+L,RETI,2205,2205,0
+L,W20,2205,2205,0
+L,W5,2205,2205,0
+L,Wilson-minE,2131,2205,74
+L,maxQ,2205,2205,0
+L,minE,2205,2205,0
+U,Knee,2205,2205,0
+U,MC-oracle,2188,2205,17
+U,RETI,2205,2205,0
+U,W20,2205,2205,0
+U,W5,2205,2205,0
+U,Wilson-minE,2131,2205,74
+U,maxQ,2205,2205,0
+U,minE,2205,2205,0

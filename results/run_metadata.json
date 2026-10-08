@@ -1,0 +1,16 @@
+{
+  "configs_per_design": 600,
+  "train": 1024,
+  "validation": 2048,
+  "mc_reference": 8192,
+  "confidence": 0.95,
+  "rho": 0.5,
+  "input_source": "Original corrected six-action simulator; author-constructed synthetic input priors",
+  "baseline_source": "Original 1200-config sweep results from verified package",
+  "restrictions": [
+    "No real carrier calibration",
+    "Nominal simultaneous energy CI relies on t approximation",
+    "Strict certification may abstain frequently",
+    "MC-reference is approximate and not an omniscient oracle"
+  ]
+}

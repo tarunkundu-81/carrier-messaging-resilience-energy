@@ -1,0 +1,17 @@
+parameter,current_setting,provenance,interpretation,empirically_calibrated,validation_needed
+original_R_by_class,"RCS 0.054; SMS 0.809; MMS 0.566; retry 0.637; multihop 0.424; redundant 0.895",author-chosen baseline from original synthetic generator,unconditional stress-contribution demonstration,no,estimate per-path delivery rates from independent receipt-confirmed traces
+original_energy_by_class,"1.0; 1.6; 2.4; 2.1; 2.8; 3.6",author-chosen relative illustrative units,legacy Table III energy illustration,no,measure incremental handset/network cost on comparable devices
+condition_R_offsets_pp,"+4;+1;-1;-4",constructed Table III four-state scenario,sensitivity-control offsets not measured differences,no,estimate within each condition with confidence intervals
+condition_energy_multipliers,"0.94;0.98;1.02;1.06",constructed Table III four-state scenario,sensitivity-control multipliers not measured load factors,no,calibrate under comparable path-condition states
+original_reference_condition_weights,"0.25;0.25;0.25;0.25",author-specified standardization distribution,equal exposure weighting assumption,no,predeclare application-specific target population weights
+sweep_component_success_ranges,"RCS 0.62-0.99;SMS 0.70-0.99;MMS 0.55-0.98;MH 0.50-0.96",synthetic uniform/correlated-copula design,counterfactual input domain not observed frequencies,no,independent path-level outcome calibration
+sweep_latency_median_ms,"RCS 85-185;SMS 110-225;MMS 135-280;MH 195-390",author-chosen latency domain,synthetic dispatch-to-handset delivery model,no,measure end-to-end latency across paths and conditions
+legacy_scenario_latency_medians_ms,"RCS 112;SMS 136;MMS 185;MH 250",author-chosen Table V scenario settings,controlled illustrative timing only,no,compare against external operator/trial traces
+latency_log_sigma,"0.27-0.55 (sweep);0.35/0.40 (legacy)",author-chosen lognormal dispersion,synthetic latency variance,no,fit independent observations
+shared_stress_rho,"0;0.5;0.85",Gaussian common-shock model,counterfactual latent variance share (not binary failure correlation),no,estimate paired failures across independent delivery paths
+success_latency_coupling_kappa,"0.0;0.7 (holdout)",counterfactual model perturbation,sensitivity to failure-slowness coupling,no,estimate paired delivery/latency dependence
+reliability_threshold_tau,"0.73-0.92 (sweep)",author-chosen service-constraint stress range,policy floor not estimated probability,not_applicable,operator should define SLA before measurement
+latency_deadline_ms,"260-540",author-chosen synthetic service deadline range,policy input distinct from observed latency,not_applicable,operator should define application deadline
+LTE_setup_release_fail_mAs,"7.26;16.53;108.53",Chen et al 2017 as transcribed by calibrated_energy.py,component measurement from published LTE handset study,partially,must validate transfer to studied hardware and failed-RCS event meaning
+SMS_energy_upper_J,"0.6478",Carroll and Heiser 2010 as transcribed by calibrated_energy.py,upper bound on GSM-era handset 82 s trace,partially,measure modern handset SMS incremental energy
+retry_setup_active_energy_fractions,"0.30;0.70",author-assumed Eq 16 active-work energy allocation,duration-based proxy not directly measured,no,ablate and instrument radio states

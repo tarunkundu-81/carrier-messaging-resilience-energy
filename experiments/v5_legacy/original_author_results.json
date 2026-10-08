@@ -1,0 +1,981 @@
+{
+ "table3_max_abs_diff_vs_formula": 0.0,
+ "qR_by_condition_SMS": {
+  "Normal": 56.6,
+  "Congested": 52.17,
+  "Partial": 49.02,
+  "Severe": 45.24
+ },
+ "qRw": {
+  "RCS": 5.4,
+  "SMS": 50.56,
+  "MMS": 23.58,
+  "Retry": 30.33,
+  "Multi-hop": 15.14,
+  "Redundant": 24.86
+ },
+ "table4": {
+  "Normal": {
+   "tau": 80,
+   "feasible": [
+    "SMS",
+    "Redundant"
+   ],
+   "choice": "SMS"
+  },
+  "Congested": {
+   "tau": 80,
+   "feasible": [
+    "SMS",
+    "Redundant"
+   ],
+   "choice": "SMS"
+  },
+  "Partial": {
+   "tau": 84,
+   "feasible": [
+    "Redundant"
+   ],
+   "choice": "Redundant"
+  },
+  "Severe": {
+   "tau": 85,
+   "feasible": [
+    "Redundant"
+   ],
+   "choice": "Redundant"
+  }
+ },
+ "table5": {
+  "Normal": {
+   "most_selected": "SMS",
+   "freq": 99.2,
+   "no_feasible": 0.0
+  },
+  "Congested": {
+   "most_selected": "SMS",
+   "freq": 68.4,
+   "no_feasible": 0.0
+  },
+  "Partial": {
+   "most_selected": "Redundant",
+   "freq": 86.2,
+   "no_feasible": 4.5
+  },
+  "Severe": {
+   "most_selected": "Redundant",
+   "freq": 55.5,
+   "no_feasible": 44.5
+  }
+ },
+ "scenario_inputs": {
+  "Normal": {
+   "L": 400,
+   "tau": 0.8,
+   "comp": {
+    "RCS": [
+     0.094,
+     0.94,
+     112,
+     0.35
+    ],
+    "SMS": [
+     0.8490000000000001,
+     1.5,
+     136,
+     0.35
+    ],
+    "MMS": [
+     0.606,
+     2.26,
+     185,
+     0.35
+    ],
+    "MH": [
+     0.46399999999999997,
+     2.63,
+     250,
+     0.4
+    ]
+   }
+  },
+  "Congested": {
+   "L": 400,
+   "tau": 0.8,
+   "comp": {
+    "RCS": [
+     0.064,
+     0.98,
+     112,
+     0.35
+    ],
+    "SMS": [
+     0.8190000000000001,
+     1.57,
+     136,
+     0.35
+    ],
+    "MMS": [
+     0.5760000000000001,
+     2.35,
+     185,
+     0.35
+    ],
+    "MH": [
+     0.434,
+     2.74,
+     250,
+     0.4
+    ]
+   }
+  },
+  "Partial": {
+   "L": 400,
+   "tau": 0.84,
+   "comp": {
+    "RCS": [
+     0.044000000000000004,
+     1.02,
+     112,
+     0.35
+    ],
+    "SMS": [
+     0.799,
+     1.63,
+     136,
+     0.35
+    ],
+    "MMS": [
+     0.556,
+     2.45,
+     185,
+     0.35
+    ],
+    "MH": [
+     0.414,
+     2.86,
+     250,
+     0.4
+    ]
+   }
+  },
+  "Severe": {
+   "L": 400,
+   "tau": 0.85,
+   "comp": {
+    "RCS": [
+     0.013999999999999999,
+     1.06,
+     112,
+     0.35
+    ],
+    "SMS": [
+     0.769,
+     1.7,
+     136,
+     0.35
+    ],
+    "MMS": [
+     0.526,
+     2.54,
+     185,
+     0.35
+    ],
+    "MH": [
+     0.384,
+     2.97,
+     250,
+     0.4
+    ]
+   }
+  },
+  "Healthy RCS": {
+   "L": 400,
+   "tau": 0.9,
+   "comp": {
+    "RCS": [
+     0.977,
+     1.2,
+     112,
+     0.35
+    ],
+    "SMS": [
+     0.88,
+     1.5,
+     136,
+     0.35
+    ],
+    "MMS": [
+     0.904,
+     2.4,
+     185,
+     0.35
+    ],
+    "MH": [
+     0.5,
+     2.8,
+     250,
+     0.4
+    ]
+   }
+  },
+  "R/E reversal": {
+   "L": 400,
+   "tau": 0.8,
+   "comp": {
+    "RCS": [
+     0.6,
+     0.9,
+     112,
+     0.35
+    ],
+    "SMS": [
+     0.88,
+     1.4,
+     136,
+     0.35
+    ],
+    "MMS": [
+     0.7,
+     2.2,
+     185,
+     0.35
+    ],
+    "MH": [
+     0.6,
+     2.6,
+     250,
+     0.4
+    ]
+   }
+  },
+  "Marginal gain": {
+   "L": 400,
+   "tau": 0.85,
+   "comp": {
+    "RCS": [
+     0.6,
+     0.9,
+     112,
+     0.35
+    ],
+    "SMS": [
+     0.9,
+     1.3,
+     136,
+     0.35
+    ],
+    "MMS": [
+     0.55,
+     2.0,
+     185,
+     0.35
+    ],
+    "MH": [
+     0.45,
+     2.6,
+     250,
+     0.4
+    ]
+   }
+  },
+  "Short deadline": {
+   "L": 200,
+   "tau": 0.88,
+   "comp": {
+    "RCS": [
+     0.5,
+     1.0,
+     112,
+     0.35
+    ],
+    "SMS": [
+     0.93,
+     1.4,
+     136,
+     0.35
+    ],
+    "MMS": [
+     0.75,
+     2.1,
+     185,
+     0.35
+    ],
+    "MH": [
+     0.5,
+     2.6,
+     250,
+     0.4
+    ]
+   }
+  },
+  "High threshold": {
+   "L": 400,
+   "tau": 0.97,
+   "comp": {
+    "RCS": [
+     0.4,
+     1.0,
+     112,
+     0.35
+    ],
+    "SMS": [
+     0.88,
+     1.4,
+     136,
+     0.35
+    ],
+    "MMS": [
+     0.75,
+     2.1,
+     185,
+     0.35
+    ],
+    "MH": [
+     0.5,
+     2.6,
+     250,
+     0.4
+    ]
+   }
+  },
+  "Energy trade-off": {
+   "L": 400,
+   "tau": 0.85,
+   "comp": {
+    "RCS": [
+     0.75,
+     0.9,
+     112,
+     0.35
+    ],
+    "SMS": [
+     0.86,
+     1.2,
+     136,
+     0.35
+    ],
+    "MMS": [
+     0.2,
+     2.0,
+     185,
+     0.35
+    ],
+    "MH": [
+     0.45,
+     2.6,
+     250,
+     0.4
+    ]
+   }
+  },
+  "Near tie": {
+   "L": 400,
+   "tau": 0.8,
+   "comp": {
+    "RCS": [
+     0.76,
+     1.2,
+     112,
+     0.35
+    ],
+    "SMS": [
+     0.81,
+     1.5,
+     136,
+     0.35
+    ],
+    "MMS": [
+     0.5,
+     2.4,
+     185,
+     0.35
+    ],
+    "MH": [
+     0.45,
+     2.8,
+     250,
+     0.4
+    ]
+   }
+  }
+ },
+ "table6": [
+  {
+   "cond": "Normal",
+   "rho": 0.0,
+   "pairQ": 94.13,
+   "gain": 9.09
+  },
+  {
+   "cond": "Normal",
+   "rho": 0.6,
+   "pairQ": 88.23,
+   "gain": 3.3
+  },
+  {
+   "cond": "Normal",
+   "rho": 0.9,
+   "pairQ": 85.25,
+   "gain": 0.24
+  },
+  {
+   "cond": "Partial",
+   "rho": 0.0,
+   "pairQ": 91.03,
+   "gain": 11.12
+  },
+  {
+   "cond": "Partial",
+   "rho": 0.6,
+   "pairQ": 84.09,
+   "gain": 4.1
+  },
+  {
+   "cond": "Partial",
+   "rho": 0.9,
+   "pairQ": 79.93,
+   "gain": 0.38
+  },
+  {
+   "cond": "Severe",
+   "rho": 0.0,
+   "pairQ": 89.02,
+   "gain": 12.12
+  },
+  {
+   "cond": "Severe",
+   "rho": 0.6,
+   "pairQ": 81.43,
+   "gain": 4.63
+  },
+  {
+   "cond": "Severe",
+   "rho": 0.9,
+   "pairQ": 77.14,
+   "gain": 0.51
+  }
+ ],
+ "partial_rho06": {
+  "Q": 84.086,
+  "wilson_lb_1sided": 83.895,
+  "tau": 84,
+  "feasible_point": true,
+  "feasible_lb": false
+ },
+ "partial_rho09_any_feasible84": false,
+ "table7_rho06": {
+  "Normal": {
+   "RETI": "SMS",
+   "minE": "SMS",
+   "maxQ": "Red",
+   "W5": "SMS",
+   "W20": "SMS"
+  },
+  "Congested": {
+   "RETI": "SMS",
+   "minE": "SMS",
+   "maxQ": "Red",
+   "W5": "SMS",
+   "W20": "SMS"
+  },
+  "Partial": {
+   "RETI": "Red",
+   "minE": "Red",
+   "maxQ": "Red",
+   "W5": "Red",
+   "W20": "Red"
+  },
+  "Severe": {
+   "RETI": null,
+   "minE": null,
+   "maxQ": null,
+   "W5": null,
+   "W20": null
+  },
+  "Healthy RCS": {
+   "RETI": "RCS",
+   "minE": "RCS",
+   "maxQ": "Retry",
+   "W5": "Retry",
+   "W20": "Retry"
+  },
+  "R/E reversal": {
+   "RETI": "SMS",
+   "minE": "SMS",
+   "maxQ": "Red",
+   "W5": "SMS",
+   "W20": "SMS"
+  },
+  "Marginal gain": {
+   "RETI": "SMS",
+   "minE": "SMS",
+   "maxQ": "Red",
+   "W5": "SMS",
+   "W20": "SMS"
+  },
+  "Short deadline": {
+   "RETI": "Red",
+   "minE": "Red",
+   "maxQ": "Red",
+   "W5": "Red",
+   "W20": "Red"
+  },
+  "High threshold": {
+   "RETI": null,
+   "minE": null,
+   "maxQ": null,
+   "W5": null,
+   "W20": null
+  },
+  "Energy trade-off": {
+   "RETI": "SMS",
+   "minE": "SMS",
+   "maxQ": "Retry",
+   "W5": "Retry",
+   "W20": "Retry"
+  },
+  "Near tie": {
+   "RETI": "Retry",
+   "minE": "SMS",
+   "maxQ": "Retry",
+   "W5": "Retry",
+   "W20": "Retry"
+  }
+ },
+ "agreement": {
+  "settings": 44,
+  "infeasible": 7,
+  "feasible": 37,
+  "agree": 34,
+  "disagreements": [
+   [
+    "Near tie",
+    "0.0",
+    "Retry",
+    "SMS"
+   ],
+   [
+    "Near tie",
+    "0.3",
+    "Retry",
+    "SMS"
+   ],
+   [
+    "Near tie",
+    "0.6",
+    "Retry",
+    "SMS"
+   ]
+  ]
+ },
+ "regret": {
+  "U5_RETI": 0.099,
+  "U5_minE": 0.888,
+  "U20_RETI": 0.059,
+  "U20_minE": 0.761,
+  "n": 37
+ },
+ "near_tie_rho06": {
+  "RETI_choice": "Retry",
+  "minE_choice": "SMS",
+  "retry_Q": 87.42,
+  "retry_E": 1.6,
+  "sms_Q": 81.11,
+  "sms_E": 1.5
+ },
+ "near_tie_gain_pp": 6.3,
+ "table8": [
+  {
+   "state": "Healthy",
+   "pair": "SMS+MMS",
+   "Q": 95.78,
+   "E": 4.05,
+   "p95": 214.8
+  },
+  {
+   "state": "Healthy",
+   "pair": "SMS+RCS",
+   "Q": 98.57,
+   "E": 2.85,
+   "p95": 175.9
+  },
+  {
+   "state": "Partial",
+   "pair": "SMS+MMS",
+   "Q": 84.09,
+   "E": 4.23,
+   "p95": 175.4
+  },
+  {
+   "state": "Partial",
+   "pair": "SMS+RCS",
+   "Q": 80.01,
+   "E": 2.8,
+   "p95": 173.9
+  }
+ ],
+ "fig1": {
+  "rho": [
+   0,
+   0.1,
+   0.2,
+   0.3,
+   0.4,
+   0.5,
+   0.6,
+   0.7,
+   0.8,
+   0.9
+  ],
+  "gain": {
+   "Normal": [
+    9.083999999999993,
+    8.162000000000003,
+    7.168000000000008,
+    6.345000000000001,
+    5.406,
+    4.3740000000000006,
+    3.2519999999999993,
+    2.1830000000000016,
+    1.1629999999999918,
+    0.262999999999991
+   ],
+   "Partial": [
+    11.114,
+    10.069000000000006,
+    8.949000000000007,
+    7.864000000000004,
+    6.589,
+    5.444000000000004,
+    4.138000000000009,
+    2.8220000000000023,
+    1.5450000000000075,
+    0.39399999999999435
+   ],
+   "Severe": [
+    12.275000000000002,
+    10.846,
+    9.828000000000003,
+    8.579000000000004,
+    7.133000000000001,
+    5.886000000000003,
+    4.517000000000005,
+    3.1930000000000014,
+    1.8750000000000044,
+    0.4790000000000072
+   ]
+  }
+ },
+ "fig2": {
+  "RCS": {
+   "Q": 75.97500000000001,
+   "E": 1.1999999999999997,
+   "p95": 137.66797131088998
+  },
+  "SMS": {
+   "Q": 81.108,
+   "E": 1.5,
+   "p95": 175.86030315668847
+  },
+  "MMS": {
+   "Q": 50.117,
+   "E": 2.3999999999999995,
+   "p95": 181.07920285328845
+  },
+  "Retry": {
+   "Q": 87.42,
+   "E": 1.5988679999999995,
+   "p95": 290.89628816217277
+  },
+  "MH": {
+   "Q": 44.964,
+   "E": 2.8,
+   "p95": 232.3919395856832
+  },
+  "Red": {
+   "Q": 84.007,
+   "E": 4.049999999999999,
+   "p95": 175.19438180371156
+  }
+ },
+ "table9": [
+  {
+   "rho": 0.0,
+   "feasible": 1194,
+   "diff": 51,
+   "pct": 4.27,
+   "ci": [
+    3.26,
+    5.57
+   ],
+   "gain_pp": 10.61,
+   "premium_pct": 5.95,
+   "robust_pct": 3.82,
+   "robust_n": 889
+  },
+  {
+   "rho": 0.5,
+   "feasible": 1120,
+   "diff": 42,
+   "pct": 3.75,
+   "ci": [
+    2.79,
+    5.03
+   ],
+   "gain_pp": 10.06,
+   "premium_pct": 5.49,
+   "robust_pct": 3.64,
+   "robust_n": 770
+  },
+  {
+   "rho": 0.85,
+   "feasible": 1030,
+   "diff": 40,
+   "pct": 3.88,
+   "ci": [
+    2.86,
+    5.24
+   ],
+   "gain_pp": 11.17,
+   "premium_pct": 6.4,
+   "robust_pct": 3.65,
+   "robust_n": 685
+  }
+ ],
+ "table10": [
+  {
+   "rho": 0.0,
+   "nocancel": 4.725,
+   "cancel": 4.329,
+   "saving": 0.397,
+   "retry_count": 1.193
+  },
+  {
+   "rho": 0.5,
+   "nocancel": 4.714,
+   "cancel": 4.413,
+   "saving": 0.301,
+   "retry_count": 1.203
+  },
+  {
+   "rho": 0.85,
+   "nocancel": 4.709,
+   "cancel": 4.493,
+   "saving": 0.215,
+   "retry_count": 1.215
+  }
+ ],
+ "congestion_adds": [
+  0.506,
+  0.512,
+  0.519
+ ],
+ "congestion_ablation_changes_RETI": [
+  3,
+  11,
+  9
+ ],
+ "cancel_ablation_changes_RETI": [
+  1,
+  1,
+  0
+ ],
+ "naive_retry_E_over_actual": 2.52,
+ "fig4": {
+  "rho": [
+   0.0,
+   0.25,
+   0.5,
+   0.75,
+   0.85
+  ],
+  "nocancel": [
+   4.725394055857838,
+   4.7177453126045386,
+   4.713607624160476,
+   4.710054675268196,
+   4.708722549018523
+  ],
+  "cancel": [
+   4.328778369989876,
+   4.367036960357891,
+   4.413036617678549,
+   4.467909962817763,
+   4.493352647642384
+  ],
+  "retry": [
+   1.5216904382704404,
+   1.544698430226718,
+   1.5550083578139933,
+   1.5663254623249858,
+   1.5728100621226513
+  ]
+ },
+ "mc8192": [
+  4.27,
+  3.94,
+  4.07
+ ],
+ "table11": [
+  {
+   "tier": "Lower",
+   "lo": 73.0,
+   "hi": 79.5,
+   "rho0.5": [
+    29,
+    400,
+    7.25
+   ],
+   "rho0.85": [
+    26,
+    398,
+    6.53
+   ]
+  },
+  {
+   "tier": "Middle",
+   "lo": 79.5,
+   "hi": 85.6,
+   "rho0.5": [
+    13,
+    388,
+    3.35
+   ],
+   "rho0.85": [
+    12,
+    356,
+    3.37
+   ]
+  },
+  {
+   "tier": "Upper",
+   "lo": 85.6,
+   "hi": 92.0,
+   "rho0.5": [
+    0,
+    332,
+    0.0
+   ],
+   "rho0.85": [
+    2,
+    276,
+    0.72
+   ]
+  }
+ ],
+ "table12_all": {
+  "Uniform|0.0|0.0": {
+   "feasible": 578,
+   "diff": 32,
+   "pct": 5.54,
+   "violR": 22,
+   "violM": 24,
+   "gain": 7.32,
+   "prem": 5.91
+  },
+  "Uniform|0.0|0.5": {
+   "feasible": 546,
+   "diff": 12,
+   "pct": 2.2,
+   "violR": 30,
+   "violM": 33,
+   "gain": 9.06,
+   "prem": 3.98
+  },
+  "Uniform|0.0|0.85": {
+   "feasible": 494,
+   "diff": 12,
+   "pct": 2.43,
+   "violR": 34,
+   "violM": 34,
+   "gain": 10.37,
+   "prem": 5.09
+  },
+  "Uniform|0.7|0.0": {
+   "feasible": 591,
+   "diff": 25,
+   "pct": 4.23,
+   "violR": 18,
+   "violM": 20,
+   "gain": 7.35,
+   "prem": 5.07
+  },
+  "Uniform|0.7|0.5": {
+   "feasible": 548,
+   "diff": 16,
+   "pct": 2.92,
+   "violR": 23,
+   "violM": 25,
+   "gain": 8.85,
+   "prem": 5.8
+  },
+  "Uniform|0.7|0.85": {
+   "feasible": 491,
+   "diff": 15,
+   "pct": 3.05,
+   "violR": 18,
+   "violM": 19,
+   "gain": 10.73,
+   "prem": 6.44
+  },
+  "Copula|0.0|0.0": {
+   "feasible": 579,
+   "diff": 31,
+   "pct": 5.35,
+   "violR": 11,
+   "violM": 12,
+   "gain": 6.88,
+   "prem": 6.31
+  },
+  "Copula|0.0|0.5": {
+   "feasible": 554,
+   "diff": 7,
+   "pct": 1.26,
+   "violR": 22,
+   "violM": 23,
+   "gain": 11.91,
+   "prem": 6.49
+  },
+  "Copula|0.0|0.85": {
+   "feasible": 515,
+   "diff": 7,
+   "pct": 1.36,
+   "violR": 26,
+   "violM": 27,
+   "gain": 9.97,
+   "prem": 5.43
+  },
+  "Copula|0.7|0.0": {
+   "feasible": 593,
+   "diff": 23,
+   "pct": 3.88,
+   "violR": 28,
+   "violM": 29,
+   "gain": 7.47,
+   "prem": 6.14
+  },
+  "Copula|0.7|0.5": {
+   "feasible": 557,
+   "diff": 12,
+   "pct": 2.15,
+   "violR": 21,
+   "violM": 24,
+   "gain": 12.27,
+   "prem": 6.15
+  },
+  "Copula|0.7|0.85": {
+   "feasible": 512,
+   "diff": 10,
+   "pct": 1.95,
+   "violR": 24,
+   "violM": 27,
+   "gain": 12.93,
+   "prem": 8.95
+  }
+ },
+ "holdout_rate_range": [
+  1.26,
+  5.54
+ ]
+}
